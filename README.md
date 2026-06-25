@@ -13,10 +13,16 @@
 
 ## 🧑‍💻 About Me
 
-- 🔭 Currently building **ScribeTube** — YouTube transcripts → polished book chapters
-- 🌱 Exploring React, Flask, TypeScript, and browser automation
-- 💡 I enjoy turning messy data into clean, usable interfaces
-- 📍 Let's connect — feel free to reach out!
+Developer who builds tools that bridge the gap between raw data and human-readable content. I care about clean interfaces, local-first software, and making complex things feel simple.
+
+Right now I'm deep into **ScribeTube** — turning YouTube videos into beautifully formatted book chapters with no API keys and no cloud dependencies.
+
+When I'm not coding, I'm thinking about decentralized systems, browser automation, and how to make AI tools actually useful.
+
+- 🔭 **ScribeTube** — YouTube transcripts → book chapters
+- 🌱 Learning by building — Supamerge, Escrow, openclaw
+- 💡 I believe good software should run locally and respect your privacy
+- 📬 [demgufever@gmail.com](mailto:demgufever@gmail.com)
 
 ---
 
