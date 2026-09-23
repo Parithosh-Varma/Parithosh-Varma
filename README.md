@@ -2,10 +2,10 @@
 
 # Hi, I'm Parithosh Varma 👋
 
-**Building tools that turn raw content into polished experiences.**
+**Local-first toolmaker — dev tools, pipelines & apps that turn raw data into polished experiences.**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Parithosh--Varma-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Parithosh-Varma)
-[![ScribeTube](https://img.shields.io/badge/Project-ScribeTube-000?style=for-the-badge&logo=youtube&logoColor=red)](https://github.com/Parithosh-Varma/ScribeTube)
+[![Portfolio](https://img.shields.io/badge/Portfolio-parithosh.pages.dev-000?style=for-the-badge&logo=github&logoColor=white)](https://parithosh.pages.dev)
+[![puter-pool](https://img.shields.io/badge/puter--pool-9_Stars-000?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/Parithosh-Varma/puter-pool)
 
 </div>
 
@@ -15,13 +15,11 @@
 
 Developer who builds tools that bridge the gap between raw data and human-readable content. I care about clean interfaces, local-first software, and making complex things feel simple.
 
-Right now I'm deep into **ScribeTube** — turning YouTube videos into beautifully formatted book chapters with no API keys and no cloud dependencies.
+Right now I'm deep into **puter-pool** — pooling Puter.com accounts into one OpenAI-compatible endpoint with unlimited AI credits across 400+ models.
 
-When I'm not coding, I'm thinking about decentralized systems, browser automation, and how to make AI tools actually useful.
-
-- 🔭 **ScribeTube** — YouTube transcripts → book chapters
-- 🌱 Learning by building — Supamerge, Escrow, openclaw
-- 💡 I believe good software should run locally and respect your privacy
+- 🔭 **puter-pool** — free AI API proxy with account pooling + auto-failover
+- 🌱 Learning by building — Supamerge, zen-proxy, openclaw
+- 💡 Good software runs locally and respects your privacy
 - 📬 [demgufever@gmail.com](mailto:demgufever@gmail.com)
 
 ---
@@ -30,10 +28,11 @@ When I'm not coding, I'm thinking about decentralized systems, browser automatio
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [**ScribeTube**](https://github.com/Parithosh-Varma/ScribeTube) | YouTube transcripts → beautiful book chapters | React, Vite, Flask, Python |
+| [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) | Free AI API proxy: pool Puter accounts, auto-failover, OpenAI-compatible, 400+ models | Python |
 | [**Supamerge**](https://github.com/Parithosh-Varma/Supamerge) | Pool multiple Supabase Free Tier DBs into a unified cluster | TypeScript |
 | [**openclaw-browser-extension**](https://github.com/Parithosh-Varma/openclaw-browser-extension) | Chrome extension for AI assistants to navigate & automate webpages | JavaScript |
-| [**Escrow**](https://github.com/Parithosh-Varma/Escrow) | Trustless decentralized escrow for EVM chains | JavaScript |
+| [**zen-proxy**](https://github.com/Parithosh-Varma/zen-proxy) | Translation proxy bridging Claude Code to OpenCode Zen's free model tier | Python |
+| [**ScribeTube**](https://github.com/Parithosh-Varma/ScribeTube) | YouTube transcripts → beautiful book chapters | React, Vite, Flask, Python |
 
 ---
 
