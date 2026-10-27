@@ -15,7 +15,7 @@
 
 ## 🧑‍💻 About
 
-Self-taught, 16. I build small things that run on your own machine or on the edge — proxies, peer-to-peer apps, agent plumbing, and the occasional game.
+Self-taught, I build small things that run on your own machine or on the edge — proxies, peer-to-peer apps, agent plumbing, and the occasional game.
 
 - 🔭 Flagship: [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) — pool Puter.com accounts into one OpenAI-compatible endpoint
 - 🧪 Latest: a browser racing prototype, an MCP bridge for dispatching coding agents, and a screenshot tool with no dependencies
