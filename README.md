@@ -2,7 +2,7 @@
 
 # Hi, I'm Parithosh Varma 👋
 
-**16-year-old self-taught builder. I make local-first tools that get more out of free tiers — nothing to host, nothing to trust.**
+**self-taught builder. I make local-first tools that get more out of free tiers — nothing to host, nothing to trust.**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-parithosh.pages.dev-000?style=for-the-badge&logo=github&logoColor=white)](https://parithosh.pages.dev)
 [![puter-pool](https://img.shields.io/github/stars/Parithosh-Varma/puter-pool?style=for-the-badge&logo=openai&logoColor=white&label=puter-pool)](https://github.com/Parithosh-Varma/puter-pool)
