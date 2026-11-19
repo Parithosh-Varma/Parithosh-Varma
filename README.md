@@ -1,76 +1,83 @@
 <div align="center">
 
-# Hi, I'm Parithosh Varma 👋
+# Remove the dependency.
 
-**self-taught builder. I make local-first tools that get more out of free tiers — nothing to host, nothing to trust.**
+I'm **Parithosh Varma**, a self-taught builder. I make local-first tools that get more out of free tiers — pool the accounts, cut the middleman, keep it on your machine.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-parithosh.pages.dev-000?style=for-the-badge&logo=github&logoColor=white)](https://parithosh.pages.dev)
-[![puter-pool](https://img.shields.io/github/stars/Parithosh-Varma/puter-pool?style=for-the-badge&logo=openai&logoColor=white&label=puter-pool)](https://github.com/Parithosh-Varma/puter-pool)
-[![pool-anything](https://img.shields.io/github/stars/Parithosh-Varma/pool-anything?style=for-the-badge&logo=cloudflare&logoColor=white&label=pool-anything)](https://github.com/Parithosh-Varma/pool-anything)
-[![followers](https://img.shields.io/github/followers/Parithosh-Varma?style=for-the-badge&logo=github&logoColor=white&label=followers&color=000)](https://github.com/Parithosh-Varma)
+[Portfolio](https://parithosh.pages.dev) · [Email](mailto:demgufever@gmail.com) · [GitHub](https://github.com/Parithosh-Varma)
 
 </div>
 
 ---
 
-## 🧑‍💻 About
+## What I build
 
-Self-taught, I build small things that run on your own machine or on the edge — proxies, peer-to-peer apps, agent plumbing, and the occasional game.
+Two threads, one habit: take out the paid service in the middle.
 
-- 🔭 Flagship: [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) — pool Puter.com accounts into one OpenAI-compatible endpoint
-- 🧪 Latest: a damage-claim app where every number is measured and receipt-backed, an MCP bridge for dispatching coding agents, and a screenshot tool with no dependencies
-- 💡 Into local-first, serverless, and peer-to-peer — software that works without asking a server for permission
-- 🛠 154 public repos, most of them small experiments that got out of hand
-- 📬 [demgufever@gmail.com](mailto:demgufever@gmail.com)
+**Pooling free tiers.** Free accounts are only free one at a time. `puter-pool` pools Puter accounts into one OpenAI-compatible endpoint. `pool-anything` generalizes the trick to any provider's keys. `zen-proxy` and `opus-free` point coding agents at the result.
 
----
+**Local-first plumbing for agents.** `TaskBridge` hands work from Claude to headless OpenCode workers. `screenagents` captures screens without Playwright. `second-seat` and `vps-agent` reach your own machines without a hosted relay in between.
 
-## 🚀 Featured Projects
-
-| Project | Description | Tech |
-|---------|-------------|------|
-| [**snapclaim**](https://github.com/Parithosh-Varma/snapclaim) ⭐ 6 | Point a phone at damage, speak one line — get a claim-ready report where every number is measured, cited, and checked by an independent model. ([live app](https://snapclaim.pages.dev)) | TypeScript |
-| [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) ⭐ 47 | Free AI API proxy: pool Puter.com accounts for unlimited credits across 400+ models (Claude, GPT, Gemini, DeepSeek). Auto-failover, OpenAI-compatible endpoint. | TypeScript |
-| [**pool-anything**](https://github.com/Parithosh-Varma/pool-anything) ⭐ 18 | Pool free-tier API keys from any provider and rotate through them — round-robin selection, per-key usage/quota tracking, drop-in HTTP proxy with a web UI. ([live demo](https://pool-anything.pages.dev)) | TypeScript |
-| [**TaskBridge**](https://github.com/Parithosh-Varma/TaskBridge) ⭐ 3 | Let Claude dispatch coding work to headless OpenCode agents over MCP — durable SQLite queue, auto-worker, two-way questions, worktree isolation. | Python |
-| [**filedrop**](https://github.com/Parithosh-Varma/filedrop) ⭐ 22 | Peer-to-peer file transfer in the browser. No server, no storage — drop a file, get a 12-char code plus QR link, stream it over WebRTC. | JavaScript |
-| [**agentflow-webmcp**](https://github.com/Parithosh-Varma/agentflow-webmcp) ⭐ 23 | Visual Workflow Builder × WebMCP — wire agent tools together on a canvas instead of in a config file. Hackathon project. | TypeScript |
+```mermaid
+flowchart LR
+    A[Puter accounts] --> P
+    B[Zen keys] --> P
+    C[any provider] --> P
+    P((pool + rotate)) --> E[one endpoint]
+    classDef pool fill:#0E7490,stroke:#0E7490,color:#fff
+    class P pool
+```
 
 ---
 
-## 🧪 Recently shipped
+## Selected work
 
-| Project | Description |
-|---------|-------------|
-| [**terminal-mcp**](https://github.com/Parithosh-Varma/terminal-mcp) | Sandboxed terminal, filesystem, git and system MCP server for Claude and ChatGPT — 67 tools, kernel-enforced workspace jail. |
-| [**sentiment-anything**](https://github.com/Parithosh-Varma/sentiment-anything) | Instantly show what a community is actually talking about — Discord, YouTube comments, livestream chats — with JEV sentiment scoring on every message. |
-| [**screenagents**](https://github.com/Parithosh-Varma/screenagents) | Screenshot anything, instantly — zero-dependency cross-platform capture for humans and agents. CLI, Python library, and MCP server. No Playwright. ([site](https://screenagents.pages.dev)) |
-| [**opus-free**](https://github.com/Parithosh-Varma/opus-free) | Frontier models free in OpenCode — Claude, Sonnet, GPT, Gemini via a local Puter proxy with tool calls, caching, and cost tracking. |
-| [**second-seat**](https://github.com/Parithosh-Varma/second-seat) | Self-hosted relay to reach your own dev machines remotely, with revocable expiring guest links. Bring your own quota. |
-| [**sfip**](https://github.com/Parithosh-Varma/sfip) | Autonomous scientific-image forensics pipeline — Observe → Plan → Execute → Verify → Score, with a read-only dashboard. |
-| [**vps-agent**](https://github.com/Parithosh-Varma/vps-agent) | Talk to a training VPS from OpenCode: one ssh/rsync wrapper that works for humans and agents alike. |
+**[snapclaim](https://github.com/Parithosh-Varma/snapclaim)** — point a phone at damage, speak one line, get a claim-ready report where every number is measured, cited, and checked by an independent model. `TypeScript` · [live app](https://snapclaim.pages.dev)
 
----
+**[puter-pool](https://github.com/Parithosh-Varma/puter-pool)** — free AI API proxy: pool Puter.com accounts for unlimited credits across 400+ models (Claude, GPT, Gemini, DeepSeek), with auto-failover and an OpenAI-compatible endpoint. `TypeScript`
 
-## 🔁 The pooling thread
+**[pool-anything](https://github.com/Parithosh-Varma/pool-anything)** — pool free-tier API keys from any provider and rotate through them: round-robin selection, per-key usage and quota tracking, a drop-in proxy with a web UI. `TypeScript` · [live demo](https://pool-anything.pages.dev)
 
-A lot of what I build is one idea in different shapes: free tiers go further when you pool and rotate them. `puter-pool` pools accounts, `zen-proxy` and `opus-free` bridge coding agents onto free models, `pool-anything` generalizes the trick to any provider's keys.
+**[TaskBridge](https://github.com/Parithosh-Varma/TaskBridge)** — Claude plans, OpenCode builds. Dispatch coding work over MCP into a durable SQLite queue: auto-worker, two-way questions, worktree isolation. `Python`
 
-The other thread is **local-first plumbing for agents** — `TaskBridge`, `screenagents`, `second-seat`, `vps-agent`. Small, boring, self-hosted tools that remove a dependency instead of adding one.
+**[filedrop](https://github.com/Parithosh-Varma/filedrop)** — peer-to-peer file transfer in the browser: drop a file, get a 12-character code plus QR link, stream it over WebRTC. No server, no storage. `JavaScript`
+
+**[agentflow-webmcp](https://github.com/Parithosh-Varma/agentflow-webmcp)** — visual workflow builder for WebMCP: wire agent tools together on a canvas instead of in a config file. `TypeScript` · hackathon project
 
 ---
 
-## 🛠 Tech Stack
+## Also shipped
+
+<details>
+<summary>More experiments that got out of hand</summary>
+
+- **[zen-proxy](https://github.com/Parithosh-Varma/zen-proxy)** — Anthropic-to-OpenAI translation proxy that runs Claude Code on OpenCode Zen's free model tier. `JavaScript`
+- **[simple-webrtc-call](https://github.com/Parithosh-Varma/simple-webrtc-call)** — peer-to-peer voice and video calls, pure static site, geo-fenced by a Cloudflare Worker. `JavaScript`
+- **[terminal-mcp](https://github.com/Parithosh-Varma/terminal-mcp)** — sandboxed terminal, filesystem, git and system MCP server for Claude and ChatGPT: 67 tools, kernel-enforced workspace jail. `TypeScript`
+- **[sentiment-anything](https://github.com/Parithosh-Varma/sentiment-anything)** — live sentiment for Discord, YouTube comments and stream chats, scored per message. `JavaScript`
+- **[screenagents](https://github.com/Parithosh-Varma/screenagents)** — zero-dependency screenshot capture for humans and agents: CLI, Python library, MCP server. `Python`
+- **[opus-free](https://github.com/Parithosh-Varma/opus-free)** — frontier models in OpenCode through a local Puter proxy, with tool calls, caching and cost tracking. `JavaScript`
+- **[second-seat](https://github.com/Parithosh-Varma/second-seat)** — self-hosted relay to your own dev machines, with revocable, expiring guest links. `JavaScript`
+- **[sfip](https://github.com/Parithosh-Varma/sfip)** — autonomous scientific-image forensics pipeline: observe, plan, execute, verify, score. `Python`
+- **[vps-agent](https://github.com/Parithosh-Varma/vps-agent)** — one ssh and rsync wrapper for talking to a training VPS from OpenCode. `Shell`
+- **[singapore-gp](https://github.com/Parithosh-Varma/singapore-gp)** — raycast vehicle physics in the browser; Stage 1 prototype on the way to a Marina Bay lap. `Three.js`
+- **[llm_trader-opencode](https://github.com/Parithosh-Varma/llm_trader-opencode)** — zero-cost paper-trading agent on OpenCode Zen with web search and FRED macro data. `TypeScript`
+
+</details>
+
+---
+
+## Stack
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F05138?style=flat&logo=swift&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F6821F?style=flat&logo=cloudflare&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=three.js&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-0E7490?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-0E7490?style=flat-square&logo=javascript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-0E7490?style=flat-square&logo=python&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-0E7490?style=flat-square&logo=swift&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-0E7490?style=flat-square&logo=cloudflare&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-0E7490?style=flat-square&logo=three.js&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-0E7490?style=flat-square&logo=sqlite&logoColor=white)
 
 </div>
 
@@ -79,9 +86,11 @@ The other thread is **local-first plumbing for agents** — `TaskBridge`, `scree
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;theme=dark&amp;hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;theme=default&amp;hide_border=true">
-  <img alt="Parithosh Varma's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;theme=default&amp;hide_border=true">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;hide_title=true&amp;theme=dark&amp;hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;hide_title=true&amp;theme=default&amp;hide_border=true">
+  <img alt="Parithosh Varma's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Parithosh-Varma&amp;show_icons=true&amp;hide_title=true&amp;theme=default&amp;hide_border=true">
 </picture>
+
+<sub>154 public repos. Most started as a weekend experiment.</sub>
 
 </div>
