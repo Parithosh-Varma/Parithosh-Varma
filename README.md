@@ -18,9 +18,9 @@
 Self-taught, I build small things that run on your own machine or on the edge — proxies, peer-to-peer apps, agent plumbing, and the occasional game.
 
 - 🔭 Flagship: [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) — pool Puter.com accounts into one OpenAI-compatible endpoint
-- 🧪 Latest: a browser racing prototype, an MCP bridge for dispatching coding agents, and a screenshot tool with no dependencies
+- 🧪 Latest: a damage-claim app where every number is measured and receipt-backed, an MCP bridge for dispatching coding agents, and a screenshot tool with no dependencies
 - 💡 Into local-first, serverless, and peer-to-peer — software that works without asking a server for permission
-- 🛠 146 public repos, most of them small experiments that got out of hand
+- 🛠 154 public repos, most of them small experiments that got out of hand
 - 📬 [demgufever@gmail.com](mailto:demgufever@gmail.com)
 
 ---
@@ -29,12 +29,12 @@ Self-taught, I build small things that run on your own machine or on the edge �
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) ⭐ 37 | Free AI API proxy: pool Puter.com accounts for unlimited credits across 400+ models (Claude, GPT, Gemini, DeepSeek). Auto-failover, OpenAI-compatible endpoint. | TypeScript |
+| [**puter-pool**](https://github.com/Parithosh-Varma/puter-pool) ⭐ 47 | Free AI API proxy: pool Puter.com accounts for unlimited credits across 400+ models (Claude, GPT, Gemini, DeepSeek). Auto-failover, OpenAI-compatible endpoint. | TypeScript |
 | [**zen-proxy**](https://github.com/Parithosh-Varma/zen-proxy) ⭐ 24 | Local translation proxy bridging Claude Code's Anthropic API to OpenCode Zen's free model tier. | JavaScript |
+| [**simple-webrtc-call**](https://github.com/Parithosh-Varma/simple-webrtc-call) ⭐ 23 | Peer-to-peer voice and video calls in the browser. Pure static site over WebRTC + PeerJS, geo-fenced by a Cloudflare Worker. | JavaScript |
+| [**agentflow-webmcp**](https://github.com/Parithosh-Varma/agentflow-webmcp) ⭐ 23 | Visual Workflow Builder × WebMCP — wire agent tools together on a canvas instead of in a config file. Hackathon project. | TypeScript |
 | [**filedrop**](https://github.com/Parithosh-Varma/filedrop) ⭐ 22 | Peer-to-peer file transfer in the browser. No server, no storage — drop a file, get a 12-char code plus QR link, stream it over WebRTC. | JavaScript |
-| [**simple-webrtc-call**](https://github.com/Parithosh-Varma/simple-webrtc-call) ⭐ 22 | Peer-to-peer voice and video calls in the browser. Pure static site over WebRTC + PeerJS, geo-fenced by a Cloudflare Worker. | JavaScript |
-| [**agentflow-webmcp**](https://github.com/Parithosh-Varma/agentflow-webmcp) ⭐ 22 | Visual Workflow Builder × WebMCP — wire agent tools together on a canvas instead of in a config file. Hackathon project. | TypeScript |
-| [**pool-anything**](https://github.com/Parithosh-Varma/pool-anything) ⭐ 17 | Pool free-tier API keys from any provider and rotate through them — round-robin selection, per-key usage tracking, drop-in HTTP proxy with a web UI. ([live demo](https://pool-anything.pages.dev)) | TypeScript |
+| [**pool-anything**](https://github.com/Parithosh-Varma/pool-anything) ⭐ 18 | Pool free-tier API keys from any provider and rotate through them — round-robin selection, per-key usage tracking, drop-in HTTP proxy with a web UI. ([live demo](https://pool-anything.pages.dev)) | TypeScript |
 | [**llm_trader-opencode**](https://github.com/Parithosh-Varma/llm_trader-opencode) ⭐ 10 | AI trading agent on OpenCode Zen with DuckDuckGo search and FRED macro confluence. | TypeScript |
 | [**singapore-gp**](https://github.com/Parithosh-Varma/singapore-gp) | Ferrari 296 GT3 around the Marina Bay Street Circuit. Raycast vehicle physics, in the browser. | Three.js · Rapier |
 
@@ -45,6 +45,7 @@ Self-taught, I build small things that run on your own machine or on the edge �
 | Project | Description |
 |---------|-------------|
 | [**TaskBridge**](https://github.com/Parithosh-Varma/TaskBridge) | Let Claude dispatch coding work to headless OpenCode agents over MCP — durable SQLite queue, auto-worker, two-way questions, worktree isolation. |
+| [**snapclaim**](https://github.com/Parithosh-Varma/snapclaim) | Point a phone at damage, speak one line — get a claim-ready report where every number is measured, receipt-backed, and checked by an independent model. ([live app](https://snapclaim.pages.dev)) |
 | [**screenagents**](https://github.com/Parithosh-Varma/screenagents) | Screenshot anything, instantly — zero-dependency cross-platform capture for humans and agents. CLI, Python library, and MCP server. No Playwright. ([site](https://screenagents.pages.dev)) |
 | [**opus-free**](https://github.com/Parithosh-Varma/opus-free) | Frontier models free in OpenCode — Claude, Sonnet, GPT, Gemini via a local Puter proxy with tool calls, caching, and cost tracking. |
 | [**second-seat**](https://github.com/Parithosh-Varma/second-seat) | Self-hosted relay to reach your own dev machines remotely, with revocable expiring guest links. Bring your own quota. |
