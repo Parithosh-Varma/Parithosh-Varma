@@ -2,7 +2,7 @@
 
 # Remove the dependency.
 
-I'm **Parithosh Varma**, a self-taught builder. I make local-first tools that get more out of free tiers — pool the accounts, cut the middleman, keep it on your machine.
+I'm **Parithosh Varma**, a self-taught builder. I make small, local-first tools that take a layer out of the stack — the hosted relay, the browser automation layer, the cloud queue, the copy-paste handoff.
 
 [Portfolio](https://parithosh.pages.dev) · [Email](mailto:demgufever@gmail.com) · [GitHub](https://github.com/Parithosh-Varma)
 
@@ -12,37 +12,25 @@ I'm **Parithosh Varma**, a self-taught builder. I make local-first tools that ge
 
 ## What I build
 
-Two threads, one habit: take out the paid service in the middle.
+Most of these start with a dependency I didn't want: a hosted relay between me and my own machine, Playwright between me and a screenshot, a cloud queue between Claude and the code. The fix is usually a small local tool with one job.
 
-**Pooling free tiers.** Free accounts are only free one at a time. `puter-pool` pools Puter accounts into one OpenAI-compatible endpoint. `pool-anything` generalizes the trick to any provider's keys. `zen-proxy` and `opus-free` point coding agents at the result.
-
-**Local-first plumbing for agents.** `TaskBridge` hands work from Claude to headless OpenCode workers. `screenagents` captures screens without Playwright. `second-seat` and `vps-agent` reach your own machines without a hosted relay in between.
-
-```mermaid
-flowchart LR
-    A[Puter accounts] --> P
-    B[Zen keys] --> P
-    C[any provider] --> P
-    P((pool + rotate)) --> E[one endpoint]
-    classDef pool fill:#0E7490,stroke:#0E7490,color:#fff
-    class P pool
-```
+The other thread is verification: SnapClaim and SFIP compute and check their numbers instead of asking a model to guess.
 
 ---
 
 ## Selected work
 
-**[snapclaim](https://github.com/Parithosh-Varma/snapclaim)** — point a phone at damage, speak one line, get a claim-ready report where every number is measured, cited, and checked by an independent model. `TypeScript` · [live app](https://snapclaim.pages.dev)
+**[snapclaim](https://github.com/Parithosh-Varma/snapclaim)** — **no guessed numbers.** Point a phone at damage, speak one line, get a claim-ready report where every number is measured, cited, and checked by an independent model. `TypeScript` · [live app](https://snapclaim.pages.dev)
 
-**[puter-pool](https://github.com/Parithosh-Varma/puter-pool)** — free AI API proxy: pool Puter.com accounts for unlimited credits across 400+ models (Claude, GPT, Gemini, DeepSeek), with auto-failover and an OpenAI-compatible endpoint. `TypeScript`
+**[puter-pool](https://github.com/Parithosh-Varma/puter-pool)** — **no single-account ceiling.** Pool Puter.com accounts into one OpenAI-compatible endpoint across 400+ models, with auto-failover. `TypeScript`
 
-**[pool-anything](https://github.com/Parithosh-Varma/pool-anything)** — pool free-tier API keys from any provider and rotate through them: round-robin selection, per-key usage and quota tracking, a drop-in proxy with a web UI. `TypeScript` · [live demo](https://pool-anything.pages.dev)
+**[pool-anything](https://github.com/Parithosh-Varma/pool-anything)** — **no one-key bottleneck.** Rotate any provider's keys with round-robin selection, per-key usage and quota tracking, and a drop-in proxy with a web UI. `TypeScript` · [live demo](https://pool-anything.pages.dev)
 
-**[TaskBridge](https://github.com/Parithosh-Varma/TaskBridge)** — Claude plans, OpenCode builds. Dispatch coding work over MCP into a durable SQLite queue: auto-worker, two-way questions, worktree isolation. `Python`
+**[TaskBridge](https://github.com/Parithosh-Varma/TaskBridge)** — **no copy-paste handoff.** Claude dispatches coding work over MCP into a durable SQLite queue: auto-worker, two-way questions, worktree isolation. `Python`
 
-**[filedrop](https://github.com/Parithosh-Varma/filedrop)** — peer-to-peer file transfer in the browser: drop a file, get a 12-character code plus QR link, stream it over WebRTC. No server, no storage. `JavaScript`
+**[filedrop](https://github.com/Parithosh-Varma/filedrop)** — **no file server.** Drop a file, get a 12-character code and QR link; it streams peer-to-peer over WebRTC. `JavaScript`
 
-**[agentflow-webmcp](https://github.com/Parithosh-Varma/agentflow-webmcp)** — visual workflow builder for WebMCP: wire agent tools together on a canvas instead of in a config file. `TypeScript` · hackathon project
+**[agentflow-webmcp](https://github.com/Parithosh-Varma/agentflow-webmcp)** — **no config file.** Wire agent tools together on a canvas instead of in a config file. `TypeScript` · hackathon project
 
 ---
 
@@ -51,7 +39,7 @@ flowchart LR
 <details>
 <summary>More experiments that got out of hand</summary>
 
-- **[zen-proxy](https://github.com/Parithosh-Varma/zen-proxy)** — Anthropic-to-OpenAI translation proxy that runs Claude Code on OpenCode Zen's free model tier. `JavaScript`
+- **[zen-proxy](https://github.com/Parithosh-Varma/zen-proxy)** — Anthropic-to-OpenAI translation proxy that lets Claude Code talk to OpenCode Zen models. `JavaScript`
 - **[simple-webrtc-call](https://github.com/Parithosh-Varma/simple-webrtc-call)** — peer-to-peer voice and video calls, pure static site, geo-fenced by a Cloudflare Worker. `JavaScript`
 - **[terminal-mcp](https://github.com/Parithosh-Varma/terminal-mcp)** — sandboxed terminal, filesystem, git and system MCP server for Claude and ChatGPT: 67 tools, kernel-enforced workspace jail. `TypeScript`
 - **[sentiment-anything](https://github.com/Parithosh-Varma/sentiment-anything)** — live sentiment for Discord, YouTube comments and stream chats, scored per message. `JavaScript`
@@ -61,7 +49,7 @@ flowchart LR
 - **[sfip](https://github.com/Parithosh-Varma/sfip)** — autonomous scientific-image forensics pipeline: observe, plan, execute, verify, score. `Python`
 - **[vps-agent](https://github.com/Parithosh-Varma/vps-agent)** — one ssh and rsync wrapper for talking to a training VPS from OpenCode. `Shell`
 - **[singapore-gp](https://github.com/Parithosh-Varma/singapore-gp)** — raycast vehicle physics in the browser; Stage 1 prototype on the way to a Marina Bay lap. `Three.js`
-- **[llm_trader-opencode](https://github.com/Parithosh-Varma/llm_trader-opencode)** — zero-cost paper-trading agent on OpenCode Zen with web search and FRED macro data. `TypeScript`
+- **[llm_trader-opencode](https://github.com/Parithosh-Varma/llm_trader-opencode)** — paper-trading agent on OpenCode Zen with web search and FRED macro data. `TypeScript`
 
 </details>
 
